@@ -1,6 +1,16 @@
 # JUnit Demo for Data Structures
 Example test file for testing the vector data structure, a generic test runner class, and a logger.
 
+## Running Tests
+To run the tests first download the five java files then run the following command to compile the files.
+```bash
+javac VectorIterator.java Vector.java Logger.java VectorTest.java TestRunner.java
+```
+Then run the following command to run the tests.
+```bash
+java TestRunner VectorTest
+```
+
 ### Vector Tests
 The VectorTest.java file contains the tests for testing the implementation of Vector.
 
@@ -26,3 +36,12 @@ try {
   throw e;
 }
 ```
+
+### Test Runner
+The TestRunner.java file contains a generic runner that will run any test file. The following command is used to run a test file.
+```bash
+java TestRunner <Name of Test File>
+```
+
+### Logger
+The Logger.java file contains a logger designed for logging various aspects of the testing.
